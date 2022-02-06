@@ -1,7 +1,7 @@
-valoresValidos = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '.', '', ' ']
-
 def validaTabela(tabela):
-    # analisa se é uma tabela de tamanho 9x9
+    # Analisa se é uma tabela de tamanho 9x9
+    
+    valoresValidos = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '.', '', ' ']
 
     if len(tabela) != 9:
         print('Nao eh uma tabela 9x9')
@@ -9,8 +9,8 @@ def validaTabela(tabela):
     else:
         for i in range(len(tabela)):
             if len(tabela[i]) != 9:
-               print('Nao eh uma tabela 9x9')
-               return False
+                print('Nao eh uma tabela 9x9')
+                return False
 
     for i in range(len(tabela)):
         for j in range(len(tabela[i])):
@@ -53,6 +53,6 @@ board3 = [["8","3",".",".","7",".",".",".","."]
    ,[".",".",".",".","8",".",".","7","9"]]
 
 
-validaTabela(board1)
-validaTabela(board2)
-validaTabela(board3)
+(validaTabela(board1))
+(validaTabela(board2))
+(validaTabela(board3))
