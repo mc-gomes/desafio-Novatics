@@ -1,7 +1,3 @@
-function ordenaNumeros(a, b) {
-    return a - b
-}
-
 function removeRepetido(lista) {
     return lista.filter(function (valor, pos, array) {
         return !pos || valor != array[pos - 1]
@@ -15,7 +11,7 @@ function manipulacao(lista) {
     console.log("\nExemplo:")
     console.log("Antes: ", lista)
 
-    listaNumAux = lista.sort(ordenaNumeros)
+    listaNumAux = lista.sort(function(a, b) {return a - b})
     listaSemRep = removeRepetido(listaNumAux)
 
     console.log("Depois: ", listaSemRep)
