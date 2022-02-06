@@ -4,21 +4,17 @@ def validaTabela(tabela):
     valoresValidos = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '.', '', ' ']
 
     if len(tabela) != 9:
-        print('Nao eh uma tabela 9x9')
         return False
     else:
         for i in range(len(tabela)):
             if len(tabela[i]) != 9:
-                print('Nao eh uma tabela 9x9')
                 return False
 
     for i in range(len(tabela)):
         for j in range(len(tabela[i])):
             if tabela[i][j] not in valoresValidos:
-                print('Algum valor eh invalido')
                 return False
 
-    print('Eh uma tabela 9x9')
     return True
 
 
@@ -53,6 +49,6 @@ board3 = [["8","3",".",".","7",".",".",".","."]
    ,[".",".",".",".","8",".",".","7","9"]]
 
 
-(validaTabela(board1))
-(validaTabela(board2))
-(validaTabela(board3))
+print(validaTabela(board1))
+print(validaTabela(board2))
+print(validaTabela(board3))
