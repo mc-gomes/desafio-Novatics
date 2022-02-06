@@ -1,7 +1,7 @@
 def validaTabela(tabela):
     # Analisa se é uma tabela de tamanho 9x9
     # e se os valores dentro dela são válidos
-    
+
     valoresValidos = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '.', '', ' ']
     # os valores '.', '', ' ' indicam espaços não preenchidos, por isso são válidos
 
@@ -28,7 +28,6 @@ def validaSudoku(tabela):
     for i in range(9):
         for j in range(9):
             if tabela[i][j] in valores:
-                print('linha')
                 return False
             elif tabela[i][j] in ['.', '', ' ']:
                 continue
